@@ -1,5 +1,5 @@
 /******************************************************************************
-
+https://www.hackerrank.com/challenges/day-of-the-programmer/problem
 *******************************************************************************/
 #include <iostream>
 #include<vector>
@@ -7,7 +7,7 @@ using namespace std;
 
 int main()
 {
-    int y,sum,day;
+    int y,sum=0,day=0;
     int arr[]={31,28,31,30,31,30,31,31};
     cin>>y;
     if(y<1919){
@@ -50,6 +50,6 @@ int main()
          cout<<day<<".09."<<y;
         }
              }
-    }
+
     return 0;
 }
