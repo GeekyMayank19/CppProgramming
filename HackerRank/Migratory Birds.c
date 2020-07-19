@@ -1,31 +1,29 @@
-
-#include <iostream>
-#include<vector>
-using namespace std;
-
+//https://www.hackerrank.com/challenges/migratory-birds/problem
+#include <stdio.h>
 int main()
 {
-  int n,frq,count=0,num=0;
-  vector <int> arr,type;
-  cin>>n;
-  for(auto i=0;i<n;i++){
-      int a;
-      cin>>a;
-      arr.push_back(a);
-  }
-  for(auto i=0;i<n;i++){
-       num=arr[i];
+    int n;
+    scanf("%d", &n);
 
-      for(auto j=1;j<n;j++){
-          if(num==arr[j]){
-              count++;
-          }
-      }
-      type[i]=count;
-      count=0;
-  }
-  for(auto i=0;i<n;i++){
-      cout<<type[i]<<" ";
-  }
-    return 0;
+    int birdIds[n];
+    int freq[6] = {0};
+    for(int i = 0 ; i < n ; i++)
+    {
+        scanf(" %d" , &birdIds[i]);
+        freq[ birdIds[i] ]++;
+    }
+
+    int maxType = 1;
+    int maxFreq = freq[1];
+
+    for(int i = 2 ; i < 6 ; i++)
+    {
+        if( freq[i] > maxFreq)
+        {
+            maxType = i;
+            maxFreq = freq[i];
+        }
+    }
+    printf("%d\n",maxType);
 }
+
