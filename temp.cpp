@@ -9,7 +9,7 @@ int main()
 	vector<int> myvector{ 1, 2, 3, 4, 5 };
 	vector<int>::iterator it;
 
-	it = myvector.begin()+1;
+	it = myvector.begin();
 	myvector.erase(it);
 
 	// Printing the Vector
