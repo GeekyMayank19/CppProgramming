@@ -40,6 +40,31 @@ int pop(struct Stack *st){
 	return x;
 }
 
+bool isEmpty(struct Stack *st){
+	if(st->top==-1){
+		return true;
+	}
+	return false;
+}
+
+bool isFull(struct Stack *st){
+	if(st->top==st->size-1){
+		return true;
+	}
+	return false;
+}
+
+int peek(struct Stack *st,int pos){
+	int x=-1;
+	if(st->top-pos +1){
+		cout<<"invalid position";
+	}
+	else{
+		return st->arr[st->top - pos +1];
+	}
+	return x;
+}
+
 int main(){
 struct Stack st;
 create(&st);
