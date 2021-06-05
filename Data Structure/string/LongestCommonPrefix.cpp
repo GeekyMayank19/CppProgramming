@@ -2,15 +2,13 @@
 using namespace std;
 int main(){
 // Initialize 2D array
-    char colour[4][10] = { "Blue", "Red", "Orange",
-                           "Yellow" };
+    vector<std::string> colour {"Blue", "Red", "Orange"};
  
-    // Printing Strings stored in 2D array
-    for (int i = 0; i < 4; i++){
-    	for(int j=0;j<4;j++){
-    		cout << colour[i][j] << "\n";
-    	}
-        
-    }
+    // Strings can be added at any time with push_back
+    colour.push_back("Yellow");
+ 
+    // Print Strings stored in Vector
+    for (int i = 0; i < colour.size(); i++)
+        std::cout << colour[i] << "\n";
     return 0;
 }
