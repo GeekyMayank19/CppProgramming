@@ -8,7 +8,7 @@ using namespace std;
     int csum=arr[0];
     int bsum=arr[0];
     for(int i=0;i<n;i++){
-        if(arr[i]+csum>0){
+        if(csum>0){
             bsum = csum+ arr[i];
         }else{
             csum=arr[i];
