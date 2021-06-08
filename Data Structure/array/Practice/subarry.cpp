@@ -3,6 +3,23 @@
 #include<bits/stdc++.h>
 using namespace std;
  
+//using ckadane's algo
+ int  subArr(int arr[],int n){
+    int csum=arr[0];
+    int bsum=arr[0];
+    for(int i=0;i<n;i++){
+        if(arr[i]+csum>0){
+            bsum = csum+ arr[i];
+        }else{
+            csum=arr[i];
+        }
+
+        if(csum>bsum){
+            bsum=csum;
+        }
+    }
+    return bsum;
+ }
 
 void subArray(int arr[], int n)
 {
@@ -27,5 +44,6 @@ int main()
     int n = sizeof(arr)/sizeof(arr[0]);
     cout << "All Non-empty Subarrays\n";
     subArray(arr, n);
+   cout<<subArr(arr,n);
     return 0;
 }
