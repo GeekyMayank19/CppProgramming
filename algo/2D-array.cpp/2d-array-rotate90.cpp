@@ -13,7 +13,9 @@ for(int i=0;i<r;i++){
 		cin>>arr[i][j];
 	}
 }
-
+// int t=3;
+// while(t>0)
+// {
 for(int i=0;i<r;i++){
 		for(int j=i;j<c;j++){
 			int temp = arr[i][j];
@@ -21,7 +23,6 @@ for(int i=0;i<r;i++){
 			arr[j][i] = temp;
 		}
 	}
-
 
 for(int i=0;i<r;i++){
 	int li=0;
@@ -35,7 +36,9 @@ for(int i=0;i<r;i++){
 		ri--;
 	}
 
-}	
+}
+// t--;
+// }	
 
 for(int i=0;i<r;i++){
 	for(int j=0;j<c;j++){
@@ -45,3 +48,5 @@ for(int i=0;i<r;i++){
 }
 return 0;
 }
+
+// error bug failyear risk defect falt 
