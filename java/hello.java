@@ -6,9 +6,9 @@ import java.util.Scanner;
 public class hello {
 
     public static void main(String[] args) {
-        System.out.println("hello world");
-        String x = "test";
-        System.out.println(x);
+        System.out.println(*5);
+        // String x = "test";
+        // System.out.println(x);
         
     }
 }
