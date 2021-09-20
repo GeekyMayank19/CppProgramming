@@ -1,3 +1,4 @@
+import java.io.*;
 import java.util.*;
 public class genericTree {
   
@@ -50,6 +51,13 @@ public class genericTree {
     }
     
     public static void main(String[] args){
+
+        try {
+			System.setIn(new FileInputStream("input.txt"));
+			System.setOut(new PrintStream(new FileOutputStream("output.txt")));
+		} catch (Exception e) {
+			System.err.println("Error");
+		}
         int[] arr = {10, 20, 50, -1, 60, -1, -1, 30, 70, -1, 80, 110, -1, 120, -1, -1, 90, -1, -1, 40, 100, -1, -1, -1};
         Node root = construct(arr);
         display(root);
