@@ -1,4 +1,3 @@
-package temp;
 import java.io.*;
 import java.util.*;
 public class genericTree {

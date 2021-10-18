@@ -1,4 +1,4 @@
-package temp;
+import java.util.Scanner;
 import java.io.*;
 import java.util.*;
 
@@ -13,5 +13,6 @@ public class B {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		System.out.println(n);
+		System.out.println("hi");
 	}
 }

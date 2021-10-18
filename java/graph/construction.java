@@ -1,10 +1,9 @@
-package graph;
+// package graph;
+// import java.io.*;
+import java.util.*;
 
 public class construction {
-    import java.io.*;
-import java.util.*;
-public class Main {
-    
+
     public static class Edge{
         int src;
         int nbr;
@@ -48,12 +47,13 @@ public class Main {
         
         
        for(int i=0;i<graph.length;i++){
-           for(int j=0;j<graph[i].length;j++){
-               System.out.print(i+"->"+"{"+graph[i].get(j).src+","+graph[i].get(j).nbr+","+graph[i].get(j).wt);
+           System.out.print(i+"->");
+           for(int j=0;j<graph[i].size();j++){
+               System.out.print("{"+graph[i].get(j).src+","+graph[i].get(j).nbr+","+graph[i].get(j).wt+"},");
            }
            System.out.println();
        } 
         
     }
 }
-}
+
